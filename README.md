@@ -15,7 +15,7 @@ A sleek and user-friendly calculator built with HTML, CSS, and JavaScript. This 
 
 ## Demo
 
-![Calculator Preview](![image](https://github.com/user-attachments/assets/e4aeac40-ed68-4ee9-b9ed-a1881c022c1c))
+![Calculator Preview](`![image](https://github.com/user-attachments/assets/ff5be814-4c01-485f-9cc3-1036bf57d057)`)
 
 ## File Structure
 
