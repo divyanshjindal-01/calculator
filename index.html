@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <p class="display"></p>
+        <div class="buttons">
+          <button class="special" id="AC" onclick="specialKey('AC')">AC</button>
+          <button class="special" id="C"  onclick="specialKey('C')">C</button>
+          <button class="special" id="%"  onclick="operator('%')">%</button>
+          <button class="special" id="/"  onclick="operator('/')">÷</button>
+          <button id ="7" onclick="giveValue('7')">7</button>
+          <button id ="8" onclick="giveValue('8')">8</button>
+          <button id ="9" onclick="giveValue('9')">9</button>
+          <button class="special1" id="*" onclick="operator('*')">x</button>
+          <button id ="4" onclick="giveValue('4')">4</button>
+          <button id ="5" onclick="giveValue('5')">5</button>
+          <button id ="6" onclick="giveValue('6')">6</button>
+          <button class="special1" id="-" onclick="operator('-')">-</button>
+          <button id ="1" onclick="giveValue('1')">1</button>
+          <button id ="2" onclick="giveValue('2')">2</button>
+          <button id ="3" onclick="giveValue('3')">3</button>
+          <button class="special1" id="+" onclick="operator('+')">+</button>
+          <button id="back" onclick="operator('back')"><i class="fa-solid fa-arrow-left"></i></button>
+          <button id ="0" onclick="giveValue('0')">0</button>
+          <button id ="." onclick="giveValue('.')">.</button>
+          <button class="special1" id="=" onclick="operator('=')">=</button>
+        </div>
+      </div>
+      
+</body>
+<script src="app.js"></script>
+</html>

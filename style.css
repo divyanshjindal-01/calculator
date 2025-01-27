@@ -1,0 +1,62 @@
+/* Calculator container */
+.calculator {
+  width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #2c3e50; /* Dark background for modern look */
+  border-radius: 25px; /* Smooth rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+/* Display screen */
+.calculator .display {
+  width: 100%;
+  height: 70px;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: right;
+  background-color: #34495e; /* Slightly lighter than the background */
+  border: none;
+  border-radius: 15px;
+  color: white;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons container */
+.calculator .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Button styles */
+.calculator .buttons button {
+  height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #282b33; /* Red for emphasis */
+  color: #1abc9c; /* Vibrant green color */
+  border: none;
+  border-radius: 20px; /* Rounded buttons */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.calculator .buttons button:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Special buttons (e.g., clear, equals) */
+.calculator .buttons .special {
+  color: #1abc9c;
+}
+.calculator .buttons .special1 {
+  color: #cc686c;
+}
