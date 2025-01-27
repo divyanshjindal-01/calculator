@@ -29,7 +29,7 @@ const special = {
     '=':calculate(),
 }
 
-function specialKey(){
+function specialKey(key){
     if(special[key]){
         special[key]();
     }
