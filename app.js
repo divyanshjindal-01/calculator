@@ -13,6 +13,7 @@ function operator(operate){
     
     if(!operation){
         operation=operate;
+        console.log(operate);
         secondValue = firstValue;
         firstValue = "";
     }
@@ -23,10 +24,18 @@ const special = {
         firstValue="";
         operation = null;
         secondValue="";
+        display.innerText = firstValue;
+
     },
-    'C': ()=>{firstValue =""},
-    'back': ()=>{firstValue= firstValue.slice(0,-1);},
-    '=':calculate(),
+    'C': ()=>{
+        firstValue ="";
+        display.innerText = firstValue;
+        operation = null;
+
+    },
+    'back': ()=>{firstValue= firstValue.slice(0,-1);
+        display.innerText = firstValue;
+    },
 }
 
 function specialKey(key){
@@ -43,12 +52,14 @@ const operations = {
 };
 
 function calculate(){
+    if (!operation || firstValue === "" || secondValue === "") return;
+
     const a = parseFloat(firstValue);
     const b = parseFloat(secondValue);
 
-    const result = operations[sighn](a, b);
-    display.innerText = result;
+    const result = operations[operation](a, b);
+    firstValue = result === 'Error' ? "Error" : result.toString();
+    display.innerText = firstValue;
     operation = null;
     secondValue = "";
-    firstValue = "";
 }

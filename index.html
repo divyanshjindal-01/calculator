@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="calculator">
-        <p class="display"></p>
+        <p class="display">enter value_</p>
         <div class="buttons">
           <button class="special" id="AC" onclick="specialKey('AC')">AC</button>
           <button class="special" id="C"  onclick="specialKey('C')">C</button>
@@ -30,7 +30,7 @@
           <button id="back" onclick="operator('back')"><i class="fa-solid fa-arrow-left"></i></button>
           <button id ="0" onclick="giveValue('0')">0</button>
           <button id ="." onclick="giveValue('.')">.</button>
-          <button class="special1" id="=" onclick="operator('=')">=</button>
+          <button class="special1" id="=" onclick="calculate()">=</button>
         </div>
       </div>
       
